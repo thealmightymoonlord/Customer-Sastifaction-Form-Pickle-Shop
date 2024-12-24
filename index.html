@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="title">Eddie's Pickle Shop Review Form</h1>
+      <p id="description">Help fill out this form to improve sastifaction!</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Please enter your name:
+            <input required id="name" type="text" placeholder="enter your name">
+          </label>
+          <label id="email-label" for="email">Please enter your email:
+            <input required id="email" type="email" placeholder="enter your email">
+          </label>
+          <label id="number-label" for="number">Please rate your overall sastifaction from 1-10:
+            <input required id="number" type="number" placeholder="enter a number" min="1" max="10">
+          </label>
+        </fieldset>
+        <fieldset>Please select the time of your dining
+          <label for="breakfast">
+            <input id="breakfast" type="radio" name="dinning-time" value="breakfast" class="inline"> Breakfast
+          </label>
+          <label for="lunch">
+            <input id="lunch" type="radio" name="dinning-time" value="lunch" class="inline"> Lunch
+          </label>
+        </fieldset>
+        <fieldset>Please select all items you tasted
+          <label for="fried-pickle">
+            <input id="fried-pickle" value="fried-pickle" type="checkbox" class="inline"> Fried Pickle
+          </label>
+          <label for="tuna-gimbap">
+            <input id="tuna-gimbap" value="tuna-gimbap" type="checkbox" class="inline"> Tuna Gimbap
+          </label>
+          <label for="pickle-ham-sandwich">
+            <input id="pickle-ham-sandwich" value="pickle-ham-sandwich" type="checkbox" class="inline"> Pickle Ham Sandwich
+          </label>
+        </fieldset>
+        <fieldset>
+          </label>Please select the product your tried:
+            <select id="dropdown">
+              <option>(select one)</option>
+              <option>Fried Pickle</option>
+              <option>Tuna Gimbap</option>
+              <option>Pickle Ham Sandwich</option>
+            </select>
+            <label>Please select a product to leave additional comments
+              <textarea rows="5"></textarea>
+            </label>
+        </fieldset>
+        <fieldset> Thank you for your time!
+        <button id="submit" type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
